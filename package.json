@@ -1,0 +1,38 @@
+{
+  "name": "nodestruct",
+  "version": "0.0.1",
+  "private": true,
+  "author": "amir bouker",
+  "scripts": {
+    "start:prod": "node ./bin/www",
+    "start:dev": "DEBUG=nodestruct:* node ./bin/www",
+    "start:watch": "DEBUG=nodestruct:* nodemon ./bin/www",
+    "database:status": "sequelize --options-path=config/database-options.js db:migrate:status",
+    "database:migrate": "sequelize --options-path=config/database-options.js db:migrate",
+    "database:seed": "sequelize --options-path=config/database-options.js db:seed:all",
+    "doc": "apidoc -i src -o doc/"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "express-validation": "^3.0.2",
+    "helmet": "^3.22.0",
+    "http-status": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.22",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.6",
+    "raven": "^2.6.4",
+    "sequelize": "^5.21.6",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,16 @@
+module.exports = {
+  Vente: "Vente",
+  Sport: "Sport",
+  Beauté: "Beauté",
+  Mode: "Mode",
+  Alimentation: "Alimentation",
+  Bricolage: "Bricolage",
+  Voyage: "Voyage",
+  Maison: "Maison",
+  AutoMoto: "Auto-moto",
+  enfants: "enfants",
+  vinsGastronomy: "vins et gastronomie",
+  Loisir: "Loisir",
+  Autre: "Autre",
+  Tous: "Tous",
+};
